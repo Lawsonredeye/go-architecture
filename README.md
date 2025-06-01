@@ -8,7 +8,7 @@ Current version: 0.1.0
 
 To check your installed version:
 ```bash
-go-arc --version
+./go-arc --version
 ```
 
 ## Features
