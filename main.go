@@ -10,16 +10,25 @@ func main() {
 	// Define command line flags
 	folderName := flag.String("folder-name", "", "Name of the root folder to create")
 	archType := flag.String("type", "", "Architecture type (ddd, clean, layered, mvc)")
-	lang := flag.String("lang", "", "Programming language (go, python)")
+	lang := flag.String("lang", "", "Programming language (go, python, java, javascript)")
+	version := flag.Bool("version", false, "Print version information")
 
 	// Parse flags
 	flag.Parse()
+
+	// Check for version flag
+	if *version {
+		fmt.Printf("Go Architecture Generator v%s\n", Version)
+		fmt.Printf("Build Time: %s\n", BuildTime)
+		fmt.Printf("Git Commit: %s\n", GitCommit)
+		os.Exit(0)
+	}
 
 	// Validate required flags
 	if *folderName == "" || *archType == "" {
 		fmt.Println("Usage: go-arc --folder-name <name> --type <architecture-type> [--lang <language>]")
 		fmt.Println("Available architecture types: ddd, clean, layered, mvc")
-		fmt.Println("Available languages: go, python")
+		fmt.Println("Available languages: go, python, java, javascript")
 		os.Exit(1)
 	}
 
