@@ -29,7 +29,7 @@ go-arc --version
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/go-architecture.git
+git clone https://github.com/lawsonredeye/go-architecture.git
 
 # Build the project
 cd go-architecture
@@ -115,20 +115,24 @@ go build -o go-arc
 - `configs/`: Configuration files
 
 ### Java (Maven)
-- `src/main/java/`: Application source
-- `src/main/resources/`: Resources
-- `src/test/`: Test files
-- `target/`: Build output
+- `src/main/java/`: Application source code
+- `src/main/resources/`: Configuration files and resources
+- `src/test/java/`: Test source code
+- `src/test/resources/`: Test configuration and resources
+- `target/`: Compiled output
 - `docs/`: Documentation
+- `config/`: Additional configuration files
 
 ### JavaScript/Node.js
 - `src/`: Source code
   - `components/`: UI components
-  - `services/`: Business logic
-  - `utils/`: Utilities
-  - `config/`: Configuration
+  - `services/`: Business logic and API calls
+  - `utils/`: Utility functions
+  - `config/`: Configuration files
+  - `types/`: Type definitions
+  - `middleware/`: Middleware functions
+  - `__tests__/`: Test files
 - `public/`: Static files
-- Includes `package.json` and `.gitignore`
 
 ## Contributing
 
