@@ -1,6 +1,6 @@
 # Go Architecture Generator
 
-![d6fcc932-5f6f-40bd-b5ff-b211316a9388.png](https://github.com/user-attachments/assets/3c9a8378-7064-4c26-b693-dc28af48e005)
+![d6fcc932-5f6f-40bd-b5ff-b211316a9388.png]
 
 A command-line tool to generate project structures for different architectural patterns and programming languages.
 
